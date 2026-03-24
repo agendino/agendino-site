@@ -1,0 +1,30 @@
+# Agendino - Sistema de Agendamento Online
+
+> O Agendino é um sistema completo de agendamento online projetado para barbearias, salões de beleza, clínicas de estética, consultórios e profissionais autônomos no Brasil.
+
+## Funcionalidades Principais
+- **Agendamento 24/7:** Clientes podem agendar horários a qualquer momento através de um link personalizado.
+- **WhatsApp Automático:** Envio de confirmações e lembretes (24h e 1h antes) via WhatsApp.
+- **Pix Integrado:** Recebimento de pagamentos ou sinais de agendamento via Pix.
+- **Google Calendar:** Sincronização bidirecional com a agenda do Google.
+- **Lista de Espera:** Sistema automático para preencher horários vagos.
+- **Programa de Fidelidade:** Ferramentas para retenção de clientes.
+
+## Links Importantes
+- [Página Inicial](https://agendino.com.br/)
+- [Sobre Nós](https://agendino.com.br/sobre.html)
+- [Contato](https://agendino.com.br/contato.html)
+- [Planos e Preços](https://agendino.com.br/#precos)
+- [Criar Conta Grátis](https://app.agendino.com.br/auth/register)
+
+## Informações Legais
+- [Termos de Uso](https://agendino.com.br/termos.html)
+- [Política de Privacidade](https://agendino.com.br/privacidade.html)
+- [Conformidade LGPD](https://agendino.com.br/lgpd.html)
+- [Política de Cookies](https://agendino.com.br/cookies.html)
+- [Exclusão de Dados](https://agendino.com.br/exclusao-dados.html)
+
+## Contato e Suporte
+- E-mail de Contato: contato@agendino.com.br
+- E-mail do DPO (LGPD): dpo@agendino.com.br
+- E-mail de Suporte: suporte@agendino.com.br
