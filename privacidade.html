@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -66,7 +67,9 @@
       transition: color .2s;
     }
     .navbar-nav a:hover { color: var(--gray-900); }
-    .navbar-actions { display: flex; align-items: center; gap: .75rem; }
+    .navbar-actions {
+      display: flex; align-items: center; gap: .75rem;
+    }
     .navbar-login {
       text-decoration: none; color: var(--gray-600);
       font-size: .875rem; font-weight: 700;
@@ -92,7 +95,7 @@
     .footer-email:hover { color: #fdba74; }
     .footer-col-title { font-size: .8rem; font-weight: 800; color: #d1d5db; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 1.25rem; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: .625rem; }
-    .footer-links a { color: #9ca3af; font-size: .875rem; text-decoration: none; transition: color .2s; }
+    .footer-links a { color: #9ca3af; text-decoration: none; transition: color .2s; font-size: .875rem; }
     .footer-links a:hover { color: var(--white); }
     .footer-bottom { border-top: 1px solid #1f2937; padding-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
     .footer-copy { font-size: .8rem; color: #6b7280; }
@@ -129,33 +132,6 @@
     .last-update { color: var(--gray-500); font-size: .875rem; margin-bottom: 3rem; display: block; }
     .section-label { display: inline-block; color: var(--primary); font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .75rem; }
     .lead { font-size: 1.25rem; color: var(--gray-500); margin-bottom: 2rem; }
-    
-    /* Contact Specific */
-    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; margin-top: 3rem; }
-    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
-    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
-    .info-card { background: var(--gray-50); border: 1px solid var(--gray-100); padding: 2rem; border-radius: var(--radius); }
-    .info-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: .5rem; color: var(--gray-900); }
-    .info-card p { color: var(--gray-600); font-size: 1rem; }
-    .info-card a { color: var(--primary); text-decoration: none; font-weight: 700; }
-    .contact-form { background: var(--white); border: 1px solid var(--gray-200); padding: 2.5rem; border-radius: 1.5rem; box-shadow: var(--shadow); }
-    .form-group { margin-bottom: 1.5rem; }
-    .form-group label { display: block; font-size: .875rem; font-weight: 700; margin-bottom: .5rem; color: var(--gray-700); }
-    .form-control { width: 100%; padding: .875rem 1rem; border-radius: .75rem; border: 1px solid var(--gray-200); font-family: inherit; font-size: 1rem; transition: all .2s; }
-    .form-control:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
-    textarea.form-control { min-height: 120px; resize: vertical; }
-    .btn-primary { width: 100%; background: var(--primary); color: var(--white); padding: 1rem; border-radius: var(--radius); border: none; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all .2s; }
-    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
-
-    @media (max-width: 768px) {
-      .navbar-nav, .navbar-login { display: none; }
-      .navbar-hamburger { display: flex; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 480px) {
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; text-align: center; }
-    }
   </style>
 </head>
 <body>
@@ -281,6 +257,7 @@
           <li><a href="/termos.html">Termos de Uso</a></li>
           <li><a href="/lgpd.html">LGPD</a></li>
           <li><a href="/cookies.html">Cookies</a></li>
+          <li><a href="/exclusao-dados.html">Exclusão de Dados</a></li>
         </ul>
       </div>
     </div>
