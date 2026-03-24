@@ -14,12 +14,26 @@
     .logo{display:flex;align-items:center;gap:.5rem;text-decoration:none;color:#111827;font-weight:900;font-size:1.1rem}
     .logo-icon{width:32px;height:32px;background:#f97316;border-radius:.625rem;display:flex;align-items:center;justify-content:center}
     .nav-back{text-decoration:none;color:#6b7280;font-size:.875rem;font-weight:600;padding:.5rem 1rem;border-radius:.625rem;background:#f3f4f6}
-    main{max-width:780px;margin:0 auto;padding:3rem 1.25rem 5rem}
-    h1{font-size:2rem;font-weight:900;margin-bottom:.75rem}
-    h2{font-size:1.2rem;font-weight:800;margin:2rem 0 .75rem}
-    p{color:#374151;margin-bottom:1rem}
-    a{color:#f97316}
-    .box{background:#fff;border:1px solid #e5e7eb;border-radius:1rem;padding:1.5rem;margin-top:2rem}
+    main { max-width: 1000px; margin: 0 auto; padding: 4rem 1.25rem 6rem; }
+    .hero-section { text-align: center; margin-bottom: 4rem; }
+    .section-label { display: inline-block; color: #f97316; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .75rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; line-height: 1.2; margin-bottom: 1.5rem; }
+    .lead { font-size: 1.25rem; color: #6b7280; margin-bottom: 2rem; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 3rem; margin-top: 3rem; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .info-card { background: #f9fafb; border: 1px solid #f3f4f6; padding: 2rem; border-radius: 1rem; }
+    .info-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: .5rem; color: #111827; }
+    .info-card p { color: #4b5563; font-size: 1rem; }
+    .info-card a { color: #f97316; text-decoration: none; font-weight: 700; }
+    .contact-form { background: #fff; border: 1px solid #e5e7eb; padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; font-size: .875rem; font-weight: 700; margin-bottom: .5rem; color: #374151; }
+    .form-control { width: 100%; padding: .875rem 1rem; border-radius: .75rem; border: 1px solid #e5e7eb; font-family: inherit; font-size: 1rem; transition: all .2s; }
+    .form-control:focus { outline: none; border-color: #f97316; box-shadow: 0 0 0 3px #fff7ed; }
+    textarea.form-control { min-height: 120px; resize: vertical; }
+    .btn-primary { width: 100%; background: #f97316; color: #fff; padding: 1rem; border-radius: 1rem; border: none; font-weight: 700; font-size: 1rem; cursor: pointer; transition: all .2s; }
+    .btn-primary:hover { background: #ea6c0f; transform: translateY(-1px); }
     footer{text-align:center;padding:2rem;color:#9ca3af;font-size:.8rem;border-top:1px solid #e5e7eb;background:#fff}
   </style>
 </head>
@@ -32,13 +46,60 @@
   <a href="/" class="nav-back">← Início</a>
 </nav>
 <main>
-  <h1>Contato</h1>
-  <p>Esta página está sendo atualizada. Para dúvidas entre em contato:</p>
-  <div class="box">
-    <p><strong>E-mail:</strong> <a href="mailto:contato@agendino.com.br">contato@agendino.com.br</a></p>
-    <p style="margin:0"><strong>Resposta:</strong> em até 24h úteis</p>
-  </div>
-</main>
+    <div class="hero-section">
+      <span class="section-label">Fale Conosco</span>
+      <h1>Estamos aqui para ajudar.</h1>
+      <p class="lead">Dúvidas, sugestões ou suporte? Nossa equipe está pronta para atender você.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>E-mail</h3>
+          <p>Para suporte e dúvidas gerais:</p>
+          <a href="mailto:contato@agendino.com.br">contato@agendino.com.br</a>
+        </div>
+        <div class="info-card">
+          <h3>Horário de Atendimento</h3>
+          <p>Segunda a Sexta: 09h às 18h</p>
+          <p>Sábado: 09h às 12h</p>
+        </div>
+        <div class="info-card">
+          <h3>Redes Sociais</h3>
+          <p>Siga-nos para novidades:</p>
+          <a href="https://instagram.com/agendino" target="_blank">@agendino</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail Corporativo</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <select id="subject" name="subject" class="form-control">
+              <option value="duvida">Dúvida sobre o sistema</option>
+              <option value="suporte">Suporte Técnico</option>
+              <option value="financeiro">Financeiro / Cobrança</option>
+              <option value="parceria">Parcerias</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" class="form-control" placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </main>
 <footer>© 2025 Agendino · <a href="/">agendino.com.br</a></footer>
 </body>
 </html>
